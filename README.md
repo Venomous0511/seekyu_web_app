@@ -27,13 +27,17 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ```bash
 
-npm install && composer install
+npm install 
+
+composer install
 
 ```
 
 2. Run migrate seeds
 
 ```bash
+
+php artisan migrate
 
 php artisan migrate:fresh --seed
 

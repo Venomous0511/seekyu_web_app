@@ -33,6 +33,39 @@
             <div class="px-4 space-y-1">
                 <div class="text-gray-400 text-xs uppercase tracking-wider font-medium px-4 mb-3">Main Menu</div>
 
+                {{-- Dashboard --}}
+                <button class="sidebar-item w-full text-left flex items-center px-4 py-3 text-gray-200 hover:bg-gray-700 rounded-lg group">
+                    <i class="fas fa-home mr-3 text-lg text-blue-400"></i>
+                    <span>Dashboard</span>
+                </button>
+
+                {{-- Account Management --}}
+                <button class="sidebar-item w-full text-left flex items-center px-4 py-3 text-gray-200 hover:bg-gray-700 rounded-lg group">
+                    <i class=""></i>
+                    <i class="fa-solid fa-users-gear mr-3 text-lg text-purple-400"></i>
+                    <span>Account Management</span>
+                </button>
+
+                {{-- Message --}}
+                <button class="sidebar-item w-full text-left flex items-center px-4 py-3 text-gray-200 hover:bg-gray-700 rounded-lg group">
+                    <i class="fas fa-envelope mr-3 text-lg text-green-400"></i>
+                    <span>Messages</span>
+                </button>
+
+                <div class="text-gray-400 text-xs uppercase tracking-wider font-medium px-4 mb-3 mt-6">Reports & Analytics</div>
+
+                {{-- Notifications --}}
+                <button class="sidebar-item w-full text-left flex items-center px-4 py-3 text-gray-200 hover:bg-gray-700 rounded-lg group">
+                    <i class="fas fa-exclamation-circle mr-3 text-lg text-yellow-400"></i>
+                    <span>Notifications</span>
+                </button>
+
+                {{-- Users Record --}}
+                <button class="sidebar-item w-full text-left flex items-center px-4 py-3 text-gray-200 hover:bg-gray-700 rounded-lg group">
+                    <i class="fa-solid fa-clipboard-user mr-3 text-lg text-red-400"></i>
+                    <span>Users Record</span>
+                </button>
+
                 {{-- @if (auth()->check())
                     <!-- Sidebar Always Visible to All -->
                     <button onclick="showSection('dashboard')"
@@ -48,6 +81,7 @@
                     @endif
 
                 @endif --}}
+            </div>
         </nav>
 
         <!-- Logout Button -->
